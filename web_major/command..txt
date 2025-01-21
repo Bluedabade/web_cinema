@@ -1,0 +1,42 @@
+ssh-keygen -R 192.168.10.10
+ssh root@192.168.10.10
+
+
+sudo mkdir -p /mnt/centos_iso
+sudo mount -o loop /dev/sdb1 /mnt/centos_iso
+sudo nano /etc/yum.repos.d/local.repo
+[local]
+named=CentOS-7-x86_64
+baseurl=file:///mnt/centos_iso
+enabled=1
+gpgcheck=0
+sudo yum clean all
+sudo yum repolist
+sudo yum install httpd php php-mysql -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo firewall-cmd --permanent --add-port=22/tcp
+sudo firewall-cmd --reload
+sudo nano /etc/named.conf
+
+
+sudo nano /var/named/ayuttech-skill.com.zone
+
+
+sudo systemctl start dns
+sudo systemctl enable dns
+sudo nana/etc/dhcp/dhcpd.conf
+
+
+
+
+default-lease-time 600;
+max-lease-time 3700;
+domain-name "skill.com";
+domain-name-servers 192.168.10.10 ,8.8.8.8;
+subnet 192.168.10.0 netmask 255.255.255.0{
+        range 192.168.10.11 192.168.10.20 ;
+        option-routers 192.168.10.10 ;
+        option-subnetmask 255.255.255.0 ;
+        option-boradcast-address 192.168.10.255 ;
+}

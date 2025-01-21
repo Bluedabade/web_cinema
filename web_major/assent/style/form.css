@@ -1,0 +1,276 @@
+:root {
+    --b: #333;
+    --w: #fff;
+    --q: #cedf39;
+    --r: #df5239;
+    --t: #587efd;
+    --back: #272727;
+    --not: #a7a7a7;
+    --active: #19e745;
+}
+
+body {
+    background-color: var(--back);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contaider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 15rem;
+    flex-direction: column;
+}
+
+.contaider_monitor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 15rem; */
+    margin-top: 3rem;
+}
+
+
+.contaider_movi {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    /* padding: 15rem; */
+}
+
+img.a{
+    width: 5rem;
+    height: 10rem;
+}
+
+.contaider_movi_ {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+
+    /* padding: 15rem; */
+}
+
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.item input {
+    font-size: .8rem;
+    padding: .8rem .9rem;
+    border-radius: 12px;
+    ;
+}
+
+.item label {
+
+    color: var(--w);
+}
+
+.item input .ASS_mini {
+    background-color: var(--t);
+    color: var(--w);
+    font-size: .8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .5rem .1rem;
+    border-radius: 12px;
+    ;
+}
+
+.ASS {
+    background-color: var(--t);
+    color: var(--w);
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .8rem .9rem;
+    border-radius: 12px;
+    ;
+}
+
+.ASS_mini {
+    background-color: var(--t);
+    color: var(--w);
+    font-size: .8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .8rem .9rem;
+    border-radius: 12px;
+    ;
+}
+
+.ASS_mini_ {
+    background-color: var(--r);
+    color: var(--w);
+    font-size: .8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .8rem .9rem;
+    border-radius: 12px;
+    ;
+}
+
+
+.ASS_mini__ {
+    background-color: var(--q);
+    color: var(--b);
+    font-size: .8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .8rem .9rem;
+    border-radius: 12px;
+    ;
+}
+
+.box {
+    display: flex;
+}
+
+.title h1 {
+    color: var(--w);
+}
+
+/* navbar */
+
+.header {}
+
+.nav {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 1.2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+    /* width: 100%; */
+    /* background-color: var(--w); */
+}
+
+.nav .menu {}
+
+/* navbar */
+
+.d h2 {
+    margin-top: 1.2rem;
+    color: white;
+}
+
+.card {
+    background-color: var(--w);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    gap: 1.2rem;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 12px 12px 0px 0px;
+
+}
+
+.card .cm {
+    padding: 0rem 1.2rem;
+}
+
+.card .cm_ {
+    padding: 0rem 1.2rem;
+}
+
+
+.card .bk {
+    padding: 2rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cm_ {
+    text-align: center;
+    background-color: #5c5c5c;
+
+}
+
+.cm {
+    text-align: center;
+
+}
+
+.head h2 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+
+.monitor {
+    background-color: var(--t);
+    width: 55rem;
+    height: 22rem;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--w);
+
+}
+
+table {
+    border: var(--b) solid 0.2rem;
+    padding: .2rem;
+
+    background-color: var(--not);
+}
+
+
+th {
+    padding: .2rem;
+
+    border: var(--b) solid 0.2rem;
+}
+
+
+td {
+    padding: .2rem;
+
+    border: var(--b) solid 0.2rem;
+}
+
+table {
+    font-size: 1.2rem;
+}
+
+.active {
+    background-color: var(--active);
+}
+

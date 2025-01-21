@@ -1,0 +1,127 @@
+:root{
+    --b:#a7a7a7;
+    --w:#fff;
+    --q:#cedf39;
+    --r:#df5239;
+    --t:#587efd;
+    --back:#272727;
+    --not:#a7a7a7;
+    --active:#19e745;
+}
+
+body{
+    background-color: var(--b);
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    /* text-decoration: none; */
+    outline: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.contaider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+margin-top: 3rem;
+}
+
+.bill{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--w);
+    padding: 1.2rem;
+    width: 15rem;
+    height: 16rem;
+    /* border: #272727 initial 1.2rem; */
+}
+
+.head{
+    
+}
+
+.head h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+
+.bill  .title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    border-bottom: #272727 dotted 1px;
+
+    /* text-decoration:#272727 dotted 1.2rem ; */
+    /* text-decoration-line: underline; */
+
+}
+
+.bill  .title_{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    /* text-decoration:#272727 dotted 1.2rem ; */
+    /* text-decoration-line: underline; */
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 1.2rem; */
+    padding: 0rem 2rem 1rem;
+}
+
+
+
+.card {
+    background-color: var(--back);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0rem;
+    gap: 1.2rem;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 2px solid #8c9b00;
+    box-shadow: #272727;
+}
+
+.card img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 12px 12px 12rem 0px;
+
+}
+
+.card .cm {
+    padding: 1.2rem 1.2rem;
+}
+
+.card .bk {
+    padding: 2rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cm {
+    text-align: center;
+
+}
+
+.card .cm h2{
+    color: var(--w);
+}
+.card .fsdf .footer{
+    color: #b5b5b5;
+
+}
+
